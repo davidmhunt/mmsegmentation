@@ -15,7 +15,7 @@ class STAREDataset(BaseSegDataset):
     '.ah.png'.
     """
     METAINFO = dict(
-        classes=('background', 'vessel'),
+        classes=('background', 'fluid'),
         palette=[[120, 120, 120], [6, 230, 230]])
 
     def __init__(self,
