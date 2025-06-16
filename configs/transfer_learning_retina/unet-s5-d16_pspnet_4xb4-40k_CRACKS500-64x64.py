@@ -1,7 +1,7 @@
-_base_ = ["../unet/unet-s5-d16_deeplabv3_4xb4-40k_drive-64x64.py"]
+_base_ = ["../unet/unet-s5-d16_pspnet_4xb4-40k_drive-64x64.py"]
 
 #specify the dataset root
-dataset_root = "/data/david/DME"
+dataset_root = "/home/david/Downloads/transfer_learning_retina/DRIVE"
 train_dataloader = dict(
     dataset = dict(
         dataset = dict(
